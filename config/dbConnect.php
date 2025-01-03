@@ -1,6 +1,6 @@
 <?php
 $user = "root"; //variavel em PHP usa $
-$pass = "";
+$pass = "senac123";
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=labmaker', $user, $pass);
     echo "";

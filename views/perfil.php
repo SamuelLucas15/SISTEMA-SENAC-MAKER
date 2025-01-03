@@ -49,8 +49,8 @@
         <div class="informações">
             <div class="info">
                 <div class="navegacao">
-                    <a class="ocupacao-info-home" href="inicio.html">Início/</a>
-                    <a class="perfil" href="perfil.html">Perfil/</a>
+                    <a class="ocupacao-info-home" href="inicio.php">Início/</a>
+                    <a class="perfil" href="perfil.php">Perfil/</a>
                     <h2 class="ocupacao-info-titulo">Informações de usuário</h2>
                 </div>
             </div>

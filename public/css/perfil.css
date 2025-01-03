@@ -1,139 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
-/* Reset básico para margem e fonte */
-* {
-    font-family: "Lexend";
-}
-
-body {
-    margin: 0;
-    line-height: initial;
-}
-
-/* Estilo da barra lateral */
-.side_items {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 20vh;
-    /* Ajuste a largura conforme necessário */
-    background-color: #f5f5f5;
-    /* Cor de fundo da barra lateral */
-    border-left: 30px solid orange;
-    /* Borda laranja à direita */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    /* Espaço no topo */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional para destacar a barra lateral */
-    z-index: 1;
-    /* Garante que a barra lateral fique atrás do conteúdo principal */
-    box-sizing: border-box;
-}
-
-.upbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    left: 0;
-    height: 12%;
-    width: 100%;
-    /* Ajuste a largura conforme necessário */
-    background-color: #003282;
-    /* Cor de fundo da barra lateral */
-    display: flex;
-    padding-top: none;
-    /* Espaço no topo */
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    /* Garante que a barra lateral fique atrás do conteúdo principal */
-}
-
-.downbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 93%;
-    left: 0;
-    height: 12%;
-    width: 100%;
-    /* Ajuste a largura conforme necessário */
-    background-color: #003282;
-    /* Cor de fundo da barra lateral */
-    display: flex;
-    padding-top: none;
-    /* Espaço no topo */
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    /* Garante que a barra lateral fique atrás do conteúdo principal */
-}
-
-.img-senac {
-    display: flex;
-    flex-direction: column;
-    margin-left: 14.4%;
-    margin-top: 1%;
-    width: 6%;
-    height: 65%;
-}
-
-/* Estilo dos links na barra lateral */
-.side_items a {
-    display: block;
-    margin: 3.6vh;
-    /* Espaço vertical entre os ícones */
-    color: #003282;
-    /* Cor do ícone */
-    text-decoration: none;
-    /* Remove o sublinhado */
-    font-size: 5vh;
-    /* Tamanho dos ícones */
-    text-align: center;
-    /* Alinha o texto ao centro */
-    transition: color 0.3s;
-    /* Transição suave para a cor ao passar o mouse */
-}
-
-.side_items a span {
-    display: block;
-    margin-top: 8px;
-    /* Espaço entre o ícone e o texto */
-    font-size: 14px;
-    /* Tamanho do texto */
-    color: #003282;
-    /* Cor do texto */
-
-}
-
-/* Estilo dos ícones ao passar o mouse */
-.side_items a:hover {
-    color: orange;
-    /* Cor do ícone ao passar o mouse */
-}
-
-.side_items a:hover span {
-    color: orange;
-    /* Cor do texto ao passar o mouse */
-}
-
-/* Divisórias entre os ícones */
-.side_items hr {
-    width: 100%;
-    border: 0;
-    border-top: 1px solid #ddd;
-    /* Cor e espessura da divisória */
-    margin: 20px 0;
-    /* Espaço vertical ao redor da divisória */
-}
-
-.quadrado-p {
-    position: relative;
-    /* Necessário para posicionar o botão dentro do quadrado-p */
-}
+@import url('layout_style.css');
 
 /* Estilo do conteúdo principal */
 main {
@@ -143,177 +8,10 @@ main {
     /* Espaçamento interno do conteúdo principal */
 }
 
-.menu_sand {
-    display: none;
-}
-
 .voltar {
     display: block;
     text-decoration: none;
     color: #003282;
-}
-
-@media screen and (max-width: 800px) {
-    body {
-        line-height: 1.2em;
-        overflow: hidden;
-    }
-
-    .side_items {
-        flex-direction: column;
-        display: none;
-    }
-
-    .menu_sand {
-        display: initial;
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        margin-top: 140px;
-        margin-left: 30px;
-    }
-
-    .sidebar_exibir {
-        display: flex !important;
-    }
-
-    .img-senac {
-        margin-left: 9%;
-        margin-top: 3.5%;
-        width: 21vw;
-        height: 7vh;
-    }
-
-    .info {
-        display: flex;
-        font-size: 10px;
-        margin-top: -80%;
-        margin-right: 10%;
-        text-align: center;
-    }
-
-    .ocupacao-info-titulo {
-        display: flex;
-        font-size: 20px;
-        width: 100%;
-    }
-
-    .navegacao {
-        display: flex;
-        margin-left: 60%;
-        margin-top: 22%;
-        width: 100%;
-    }
-
-    .user-info {
-        position: absolute;
-        width: 100%;
-    }
-
-    .user-info-container {
-        display: flex;
-    }
-
-    .ocupacao-info-home,
-    .perfil {
-        display: none;
-    }
-
-    .profile-pic-moon,
-    material-symbols-outlined {
-        display: none;
-    }
-/*dados de usuario------------------------------------------------------*/
-    .dados-usuario {
-        display: flex;
-        width: 50vw;
-        font-size: 11px;
-        margin-top: 110%;
-        margin-left: -65%;
-        line-height: 0.6cm;
-        font-weight: 700;
-    }
-/*dados de usuario-----------------------------------------------------------*/
-    .dados-usuario h2 {
-        font-size: 15px;
-        width: 50vw;
-    }
-/*cor fonte------------------------------------------------------------*/
-    .dados-usuario .a {
-        color: blue;
-        text-decoration: none;
-    }
-
-    .profile-pic-perfil .initials {
-        margin-top: 1%;
-        padding: 40%;
-    }
-
-    .fa-solid.fa-camera {
-        margin-left: 3%;
-    }
-
-    .quadrado .profile-pic-perfil {
-        width: 140%;
-    }
-
-    .profile-pic-perfil {
-        margin-top: 500%;
-        margin-left: 180px;
-        align-self: center;
-    }
-
-    .user-details .nome {
-        margin-top: -20%;
-    }
-
-/*nome principal do usuario----------------------------------------------*/
-    .user-details {
-        font-size: 70%;
-        margin-left: 90%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        margin-top: 2%;
-    }
- 
-    .quadrado {
-        height: 1vh;
-        width: 100%;
-        display: flex;
-    }
-/*sair---------------------------------------------------------------*/
-    .mobile {
-        display: initial !important;
-        margin-top: 45%;
-        margin-left: 60%;
-    }
-
-    .sair {
-        display: none;
-    }
-
-    .user-details .fa-arrow-right-from-bracket {
-        display: none;
-    }
-/*sair----------------------------------------------------------------*/
-    .mobile .fa-arrow-right-from-bracket {
-        display: flex;
-        margin-left: 120%;
-        margin-top: -55%;
-        gap: 60%;
-    }
-
-    .user-details .ab .fa-arrow-right-from-bracket {
-        padding: 50%;
-    }
-
-    .initials {
-        font-size: 60%;
-    }
-
 }
 
 .mobile {
@@ -545,4 +243,167 @@ h4 {
 .material-symbols-outlined {
     margin-left: 25%;
     margin-top: 25%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        line-height: 1.2em;
+        overflow: hidden;
+    }
+
+    .side_items {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu_sand {
+        display: initial;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        margin-top: 140px;
+        margin-left: 30px;
+    }
+
+    .sidebar_exibir {
+        display: flex !important;
+    }
+
+    .img-senac {
+        margin-left: 9%;
+        margin-top: 3.5%;
+        width: 21vw;
+        height: 7vh;
+    }
+
+    .info {
+        display: flex;
+        font-size: 10px;
+        margin-top: -80%;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .ocupacao-info-titulo {
+        display: flex;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .navegacao {
+        display: flex;
+        margin-left: 60%;
+        margin-top: 22%;
+        width: 100%;
+    }
+
+    .user-info {
+        position: absolute;
+        width: 100%;
+    }
+
+    .user-info-container {
+        display: flex;
+    }
+
+    .ocupacao-info-home,
+    .perfil {
+        display: none;
+    }
+
+    .profile-pic-moon,
+    material-symbols-outlined {
+        display: none;
+    }
+/*dados de usuario------------------------------------------------------*/
+    .dados-usuario {
+        display: flex;
+        width: 50vw;
+        font-size: 11px;
+        margin-top: 110%;
+        margin-left: -65%;
+        line-height: 0.6cm;
+        font-weight: 700;
+    }
+/*dados de usuario-----------------------------------------------------------*/
+    .dados-usuario h2 {
+        font-size: 15px;
+        width: 50vw;
+    }
+/*cor fonte------------------------------------------------------------*/
+    .dados-usuario .a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    .profile-pic-perfil .initials {
+        margin-top: 1%;
+        padding: 40%;
+    }
+
+    .fa-solid.fa-camera {
+        margin-left: 3%;
+    }
+
+    .quadrado .profile-pic-perfil {
+        width: 140%;
+    }
+
+    .profile-pic-perfil {
+        margin-top: 500%;
+        margin-left: 180px;
+        align-self: center;
+    }
+
+    .user-details .nome {
+        margin-top: -20%;
+    }
+
+/*nome principal do usuario----------------------------------------------*/
+    .user-details {
+        font-size: 70%;
+        margin-left: 90%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+ 
+    .quadrado {
+        height: 1vh;
+        width: 100%;
+        display: flex;
+    }
+/*sair---------------------------------------------------------------*/
+    .mobile {
+        display: initial !important;
+        margin-top: 45%;
+        margin-left: 60%;
+    }
+
+    .sair {
+        display: none;
+    }
+
+    .user-details .fa-arrow-right-from-bracket {
+        display: none;
+    }
+/*sair----------------------------------------------------------------*/
+    .mobile .fa-arrow-right-from-bracket {
+        display: flex;
+        margin-left: 120%;
+        margin-top: -55%;
+        gap: 60%;
+    }
+
+    .user-details .ab .fa-arrow-right-from-bracket {
+        padding: 50%;
+    }
+
+    .initials {
+        font-size: 60%;
+    }
+
 }

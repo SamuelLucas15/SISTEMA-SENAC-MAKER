@@ -54,8 +54,8 @@
     </sidebar>
     <main>
         <div class="caminho">
-            <a class="home" href="inicio.html">Início/</a>
-            <a class="gerenciamento" href="gerenciamento.html">Gerenciamento/</a>
+            <a class="home" href="inicio.php">Início/</a>
+            <a class="gerenciamento" href="gerenciamento.php">Gerenciamento/</a>
         </div>
         <div class="conteudo-botaoadd-tabela">
             <section class="section1">

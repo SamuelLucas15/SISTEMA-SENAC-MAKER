@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
+@import url('layout_style.css');
 
 /* Reset básico para margem e fonte */
 :root {
     --primary-clr: #003b9b;
 }
 
+.sidebar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend";
 }
 
 body {
@@ -17,67 +20,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.upbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    left: 0;
-    height: 12%;
-    width: 100%;
-    /* Ajuste a largura conforme necessário */
-    background-color: #003282;
-    /* Cor de fundo da barra lateral */
-    display: flex;
-    padding-top: none;
-    /* Espaço no topo */
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    /* Garante que a barra lateral fique atrás do conteúdo principal */
-}
-
-.sidebar {
-    display: none;
-}
-
-.downbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 93%;
-    left: 0;
-    height: 12%;
-    width: 100%;
-    /* Ajuste a largura conforme necessário */
-    background-color: #003282;
-    /* Cor de fundo da barra lateral */
-    display: flex;
-    padding-top: none;
-    /* Espaço no topo */
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    z-index: 1;
-    /* Garante que a barra lateral fique atrás do conteúdo principal */
-}
-
-.img-senac {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20%;
-    margin-top: 1%;
-    width: 6%;
-    height: 65%;
-    margin-left: 5%;
-}
-
-/* Estilo dos links na barra lateral */
-
-
-.quadrado-p {
-    position: relative;
-    /* Necessário para posicionar o botão dentro do quadrado-p */
 }
 
 /* Estilo do conteúdo principal */
