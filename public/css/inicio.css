@@ -23,7 +23,6 @@
 .quadrado {
     height: 25vh;
     width: 80vw;
-    background: linear-gradient(to right, rgba(0, 50, 130, 0.7), rgba(0, 119, 255, 0.7)), url('imagens/Design sem nome.png') no-repeat center center; /* Gradiente azul com imagem */
     background-size: cover; /* Faz a imagem cobrir todo o elemento */
     display: flex;
     justify-self: center;
@@ -297,7 +296,7 @@ h5{
         z-index: 1; /* Garante que o logo apareça sobre o gradiente */
        margin-top: -15%;
     }
-    .logo-senac:houver{
+    .logo-senac:hover{
     opacity: 1;
     }
     
