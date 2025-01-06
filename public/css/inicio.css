@@ -1,16 +1,9 @@
 @import url('layout_style.css');
 
-.campo {
-    margin-left: 10vw;
-    margin-top: 0vh;
-}
-
 .div_nome_user{
-    position: absolute;
-    left: 15%;
-    top: 14vh;
     z-index: 999;
     width: 15vw;
+    margin-left: 10%;
 }
 
 .nome_exibir{
@@ -27,12 +20,13 @@
     display: flex;
     justify-self: center;
     border-radius: 15px;
-    margin-top: 22vh ;
+    position: relative;
 }
 .img-impressao{ /*ajustes do banner*/
     height: 100%;
     width: 100%;
     border-radius: 15px;
+    position: absolute;
 }
 .logo-senac {
     height: 15vh; /* Ajuste a altura do logo conforme necessário */
@@ -168,12 +162,12 @@ h5{
 }
 
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 800px){
     body {
         line-height: 1.1em;
     }
     
-    .campo {
+    main {
         margin-left: -5vw;
         margin-top: 5vh;
         margin-right: 10vw;
@@ -277,7 +271,6 @@ h5{
         border-radius: 15px;
     }
    
-
     .img-senac{
         margin-left: 9%;
         margin-top: 3.5%;

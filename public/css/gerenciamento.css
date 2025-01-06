@@ -3,8 +3,6 @@
 /* Estilo do conteúdo principal */
 
 main {
-    margin-left: 11.55vw;
-    margin-top: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

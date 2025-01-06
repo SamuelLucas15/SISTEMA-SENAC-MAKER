@@ -115,6 +115,7 @@
     <!-- Link para a biblioteca de ícones FontAwesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-OH5h9J1d4F2pWOSr6QdoARnIk/lZwE2deLq5pD7zB2RyFF2zDzZQdyycfp6Hs6jb" crossorigin="anonymous"></script>
     <script src="../public/js/perfil.js"></script>
+    <script src="../public/js/menu_sand.js"></script>
 </body>
 
 </html>

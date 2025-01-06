@@ -130,5 +130,6 @@
     <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js"></script>
     <script src="../public/js/relatorio_script.js"></script>
+    <script src="../public/js/menu_sand.js"></script>
 </body>
 </html>

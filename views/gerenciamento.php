@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header class="upbar">
+    <div class="upbar">
         <img class="img-senac" src="../public/imgs/senac_logo_branco.png" alt="">
-    </header>
+    </div>
     <div class="downbar"></div>
     <sidebar class="sidebar">
         <img src="../public/imgs/bars-solid.svg" alt="" class="menu_sand">
@@ -364,6 +364,8 @@
     <!-- Incluir o JS do DataTables -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <script src="../public/js/gerenciamento.js"></script>
+    <script src="../public/js/menu_sand.js"></script>
+    
 
 
 

@@ -1,22 +1,3 @@
-function classToggle() {
-    const navs = document.querySelectorAll('.side_items')
-
-    navs.forEach(nav => nav.classList.toggle('sidebar_exibir'));
-}
-
-function handleClickOutside(event) {
-    const navs = document.querySelectorAll('.side_items');
-    const menuSand = document.querySelector('.fa-bars');
-
-    // Verifica se o clique foi fora do menu e do botão de alternância
-    if (!Array.from(navs).some(nav => nav.contains(event.target)) && !menuSand.contains(event.target)) {
-        navs.forEach(nav => nav.classList.remove('sidebar_exibir'));
-    }
-}
-
-document.querySelector('.fa-bars').addEventListener('click', classToggle);
-document.addEventListener('click', handleClickOutside);
-
 const calendario = document.querySelector('.calendario'),
     date = document.querySelector('.data'),
     daysContainer = document.querySelector('.dias'),

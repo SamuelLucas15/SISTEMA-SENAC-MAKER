@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="../public/css/inicio.css">
 </head>
 <body>
-    <header class = "upbar">
-        <img class = "img-senac" src="../public/imgs/logo_branco 1.png" alt = "">
-    </header>
-    <div class = "downbar">
+    <div class="upbar">
+        <img class="img-senac" src="../public/imgs/senac_logo_branco.png" alt = "Logo do Senac">
     </div>
+    
     <sidebar class="sidebar">
-        <img src="bars-solid.svg" alt="" class="menu_sand">
+        <img src="../public/imgs/bars-solid.svg" alt="" class="menu_sand">
         <nav class="side_items">
             <a href="inicio.php">
                 <i class="fa-solid fa-house"></i>
@@ -43,21 +42,21 @@
         </nav>
     </sidebar>
 
-    <div class="div_nome_user">
-        <?php
-        session_start(); // Inicia a sessão no início de cada página
-        // Exibe o nome do usuário, se estiver definido na sessão
-        if (isset($_SESSION['Nome_user'])) {
-            echo "<p class='nome_exibir'>Olá, {$_SESSION['Nome_user']}!</p>";
-        } else {
-            echo "<p class='nome_exibir'>Usuário não encontrado.</p>";
-        }
-        ?>
-    </div>
-    <main class="campo">
+    <main>
+        <div class="div_nome_user">
+            <?php
+            session_start(); // Inicia a sessão no início de cada página
+            // Exibe o nome do usuário, se estiver definido na sessão
+            if (isset($_SESSION['Nome_user'])) {
+                echo "<p class='nome_exibir'>Olá, {$_SESSION['Nome_user']}!</p>";
+            } else {
+                echo "<p class='nome_exibir'>Usuário não encontrado.</p>";
+            }
+            ?>
+        </div>
         <div class = "quadrado">
             <img class="logo-senac" src="../public/imgs/logo_branco 1.png" alt="Logo Senac">
-            <img class = "img-impressao" src="../public/imgs/projetos_impressora_img.png" alt = "0">
+            <img class = "img-impressao" src="../public/imgs/projetos_impressora_img.png" alt = "Imagem do Laboratório">
            
         </div>
         <div class="quadrado1-2">
@@ -105,8 +104,11 @@
             </div>
         </div>
     </main>
+    <div class="downbar">
+    </div>
     <!-- Link para a biblioteca de ícones FontAwesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-OH5h9J1d4F2pWOSr6QdoARnIk/lZwE2deLq5pD7zB2RyFF2zDzZQdyycfp6Hs6jb" crossorigin="anonymous"></script>
     <script src="../public/js/inicio.js"></script>
+    <script src="../public/js/menu_sand.js"></script>
 </body>
 </html>

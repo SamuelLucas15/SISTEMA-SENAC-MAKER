@@ -18,15 +18,6 @@ body {
     justify-content: center;
 }
 
-/* Estilo do conteúdo principal */
-main {
-    margin-left: 200px;
-    /* Ajusta a margem esquerda para evitar sobreposição com a barra lateral */
-    padding: 20px;
-    /* Espaçamento interno do conteúdo principal */
-    font-family: 'Lexend';
-
-}
 .caminho{
     display: flex;
     margin-top: 11.6vh;
@@ -73,7 +64,6 @@ main {
 }
 
 .campo-pesq::placeholder {
-    font-family: 'Lexend';
     font-size: medium;
     color: #CECECE;
     font-weight: 300;
@@ -93,7 +83,6 @@ main {
     color: white;
     background-color: #3572EF;
     border-style: none;
-    font-family: 'Lexend';
     align-items: center;
     justify-content: space-around;
     font-size: medium;
@@ -514,7 +503,6 @@ main {
     color: white;
     background-color: #3572EF;
     border-style: none;
-    font-family: 'Lexend';
     align-items: center;
     justify-content: space-around;
     font-size: medium;
